@@ -1,6 +1,6 @@
 # Interval
 
-A set of [Real Numbers](real-numbers.md) that contains all real numbers
+A set of [Real Numbers](real-numbers) that contains all real numbers
 lying between any two numbers of the set.
 
 **Notation**
