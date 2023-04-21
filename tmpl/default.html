@@ -1,0 +1,25 @@
+#!
+case $src in
+*".md" )
+#!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>$src</title>
+    <link href="${path_to_root}/main.css" rel="stylesheet">
+    <link href="${path_to_root}/katex.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="${path_to_root}">home</a>
+    </nav>
+    <article>
+        $(pandoc --filter pandoc-katex --css "${path_to_root}/katex.min.css" -t html $src)
+    </article>
+</body>
+
+</html>
+#!
+esac
