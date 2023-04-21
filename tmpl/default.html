@@ -17,9 +17,11 @@ case $src in
     <nav>
         <a href="${path_to_root}">home</a>
     </nav>
-    <article>
-        $(pandoc --filter pandoc-katex --css "${path_to_root}/katex.min.css" -t html $src)
-    </article>
+    <main>
+        <article>
+            $(pandoc --filter pandoc-katex --css "${path_to_root}/katex.min.css" -t html $src)
+        </article>
+    </main>
 </body>
 
 </html>
